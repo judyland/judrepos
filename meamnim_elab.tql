@@ -1,0 +1,86 @@
+#We assume 2d world
+define
+
+element sub entity,
+    plays formation:leader-of-a-quartate,
+    plays formation:second-of-a-quartate,
+    owns name,
+    owns locx,
+    owns locy,
+    owns flocx,
+    owns flocy,
+    owns reqlocx,
+    owns reqlocy,
+    owns otherlocx,
+    owns otherlocy,
+    owns is-alive, 
+    owns action,
+    owns heading;
+
+
+leader sub element;
+second sub element;
+enemy sub element;
+
+name sub attribute,
+    value string;
+locx sub attribute,
+    value double;
+reqlocx sub attribute,
+    value double;
+reqlocy sub attribute,
+    value double;
+otherlocx sub attribute,
+    value double;
+heading sub attribute,
+    value double;
+otherlocy sub attribute,
+    value double;
+
+locy sub attribute,
+    value double;
+
+flocx sub attribute,
+    value double;
+
+flocy sub attribute,
+    value double;
+
+action sub attribute,
+    value string,
+    regex "^(shut-arrived-enemy-leader|shut-arrived-enemy-second|turn-pix-right|turn-pix-left|keep-same|random)$";
+
+is-alive sub attribute,
+    value boolean;
+
+
+formation sub relation,
+    relates leader-of-a-quartate,
+    relates second-of-a-quartate,   
+    owns formation-action,
+    owns formation-is-gathered,
+    owns desired-locx,
+    owns desired-locy,
+    owns distance,
+    owns locx,
+    owns locy;
+
+
+formation-action sub attribute,
+    value string,
+    regex "^(gather|attack|fly|patrol)$";
+
+formation-is-gathered sub attribute,
+    value boolean;
+
+desired-locx sub attribute,
+    value double; 
+
+desired-locy sub attribute,
+    value double; 
+
+distance sub attribute,
+    value double; 
+
+
+

@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewRuleDialog</class>
+ <widget class="QDialog" name="NewRuleDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>673</width>
+    <height>714</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>New Rule</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>670</y>
+     <width>151</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Condition</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_condition">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>80</y>
+     <width>571</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>671</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>120</y>
+     <width>671</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>310</y>
+     <width>671</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>21</y>
+     <width>333</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>State</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox_State">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Flight</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Second couple gathering</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Formation gathering</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Patrol</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Attack one couple</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Attac another couple</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Use doctrine Attack element by element</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Patrol</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Leave</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>All States</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Add New State</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>450</y>
+     <width>651</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tabDocOrAction">
+    <attribute name="title">
+     <string>Doctrine or Action</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>651</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>293</width>
+       <height>89</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="3" column="0">
+       <widget class="QRadioButton" name="radioButton_4">
+        <property name="text">
+         <string>insert query</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QRadioButton" name="radioButton_3">
+        <property name="text">
+         <string>Action or attribute of</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="lineEdit_matchActionOnEntity"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QComboBox" name="comboBox_ActionOn">
+        <item>
+         <property name="text">
+          <string>Select Entity</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabAttr">
+    <attribute name="title">
+     <string>Attribute</string>
+    </attribute>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>174</width>
+       <height>162</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Attribute</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBox_attribute">
+        <item>
+         <property name="text">
+          <string>locx</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>locy</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>heading</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>flocx</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>flocy</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>reqlocx</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>reqlocy</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>otherlocx</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>otherlocy</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>is-alive</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>action</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineEdit_attrNewVal"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_attrOldVal">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>New Value</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Value</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>651</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5"/>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>130</y>
+     <width>661</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Effect</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>590</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="1">
+      <widget class="QComboBox" name="comboBox_doctrine">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QRadioButton" name="radioButton_changeAttr">
+       <property name="text">
+        <string>Change attribute</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="comboBox_commitAction">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Flight</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Second couple gathering</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Formation gathering</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Patrol</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Attack one couple</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Attac another couple</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Use doctrine Attack element by element</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Patrol</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Leave</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="radioButton_chooseDoctrine">
+       <property name="text">
+        <string>Choose doctrine</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QRadioButton" name="radioButton_modifyState">
+       <property name="text">
+        <string>Modify state</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QRadioButton" name="radioButton_chooseAction">
+       <property name="text">
+        <string>Commit action</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="comboBox_stateModify">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Flight</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Second couple gathering</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Formation gathering</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Patrol</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Attack one couple</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Attac another couple</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Use doctrine Attack element by element</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Patrol</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Leave</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>All States</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Add New State</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="Line" name="line_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>410</y>
+     <width>671</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>649</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>361</width>
+      <height>87</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="text">
+        <string>insert query</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_matchActionOfEntity"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QRadioButton" name="radioButton">
+       <property name="text">
+        <string>Action or attribute of</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="comboBox_actionOf">
+       <item>
+        <property name="text">
+         <string>Select Entity</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>NewRuleDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>NewRuleDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
