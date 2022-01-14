@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>673</width>
-    <height>714</height>
+    <width>732</width>
+    <height>826</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,11 +19,16 @@
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>670</y>
+     <x>570</x>
+     <y>780</y>
      <width>151</width>
      <height>32</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -36,32 +41,8 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>80</y>
-     <width>71</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-     <horstretch>0</horstretch>
-     <verstretch>0</verstretch>
-    </sizepolicy>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>13</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Condition</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_condition">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>80</y>
-     <width>571</width>
+     <y>245</y>
+     <width>101</width>
      <height>21</height>
     </rect>
    </property>
@@ -73,7 +54,31 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>13</pointsize>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Condition</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_condition">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>240</y>
+     <width>541</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
     </font>
    </property>
   </widget>
@@ -81,10 +86,15 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>60</y>
+     <y>220</y>
      <width>671</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -94,10 +104,15 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>120</y>
+     <y>280</y>
      <width>671</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -107,10 +122,15 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>310</y>
+     <y>470</y>
      <width>671</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -120,10 +140,15 @@
    <property name="geometry">
     <rect>
      <x>12</x>
-     <y>21</y>
-     <width>333</width>
-     <height>32</height>
+     <y>181</y>
+     <width>478</width>
+     <height>35</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
@@ -136,7 +161,7 @@
       </property>
       <property name="font">
        <font>
-        <pointsize>13</pointsize>
+        <pointsize>10</pointsize>
        </font>
       </property>
       <property name="text">
@@ -154,12 +179,12 @@
       </property>
       <property name="font">
        <font>
-        <pointsize>13</pointsize>
+        <pointsize>10</pointsize>
        </font>
       </property>
       <item>
        <property name="text">
-        <string>Flight</string>
+        <string>Formation gathering</string>
        </property>
       </item>
       <item>
@@ -169,7 +194,7 @@
       </item>
       <item>
        <property name="text">
-        <string>Formation gathering</string>
+        <string>Flight</string>
        </property>
       </item>
       <item>
@@ -220,10 +245,15 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>450</y>
+     <y>600</y>
      <width>651</width>
-     <height>201</height>
+     <height>181</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="currentIndex">
     <number>0</number>
@@ -241,9 +271,19 @@
        <height>51</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
      <layout class="QHBoxLayout" name="horizontalLayout_6">
       <item>
        <widget class="QGroupBox" name="groupBox_3">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="title">
          <string/>
         </property>
@@ -251,7 +291,7 @@
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -260,18 +300,33 @@
        <height>89</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
      <layout class="QGridLayout" name="gridLayout_3">
       <item row="3" column="0">
-       <widget class="QRadioButton" name="radioButton_4">
+       <widget class="QRadioButton" name="radioButton_select">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>insert query</string>
         </property>
        </widget>
       </item>
       <item row="2" column="0">
-       <widget class="QRadioButton" name="radioButton_3">
+       <widget class="QRadioButton" name="radioButton_selectEntity">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="text">
-         <string>Action or attribute of</string>
+         <string>Action on</string>
         </property>
         <property name="checked">
          <bool>true</bool>
@@ -279,10 +334,21 @@
        </widget>
       </item>
       <item row="3" column="2">
-       <widget class="QLineEdit" name="lineEdit_matchActionOnEntity"/>
+       <widget class="QLineEdit" name="lineEdit_matchActionOnEntity">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
       </item>
       <item row="2" column="2">
        <widget class="QComboBox" name="comboBox_ActionOn">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <item>
          <property name="text">
           <string>Select Entity</string>
@@ -297,13 +363,13 @@
     <attribute name="title">
      <string>Attribute</string>
     </attribute>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>174</width>
-       <height>162</height>
+       <width>411</width>
+       <height>151</height>
       </rect>
      </property>
      <layout class="QGridLayout" name="gridLayout_4">
@@ -405,10 +471,15 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>330</y>
+     <y>490</y>
      <width>651</width>
      <height>101</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_5"/>
   </widget>
@@ -416,10 +487,15 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>130</y>
+     <y>290</y>
      <width>661</width>
      <height>181</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="title">
     <string>Effect</string>
@@ -433,6 +509,11 @@
       <height>152</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="1" column="1">
       <widget class="QComboBox" name="comboBox_doctrine">
@@ -444,13 +525,18 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
       </widget>
      </item>
      <item row="4" column="0" colspan="2">
       <widget class="QRadioButton" name="radioButton_changeAttr">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Change attribute</string>
        </property>
@@ -469,7 +555,7 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <item>
@@ -521,6 +607,11 @@
      </item>
      <item row="1" column="0">
       <widget class="QRadioButton" name="radioButton_chooseDoctrine">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Choose doctrine</string>
        </property>
@@ -531,6 +622,11 @@
      </item>
      <item row="2" column="0">
       <widget class="QRadioButton" name="radioButton_modifyState">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Modify state</string>
        </property>
@@ -541,6 +637,11 @@
      </item>
      <item row="0" column="0">
       <widget class="QRadioButton" name="radioButton_chooseAction">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Commit action</string>
        </property>
@@ -559,7 +660,7 @@
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <item>
@@ -626,10 +727,15 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>410</y>
+     <y>570</y>
      <width>671</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -639,15 +745,20 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>320</y>
+     <y>480</y>
      <width>649</width>
      <height>100</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
    <property name="title">
     <string/>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -656,19 +767,40 @@
       <height>87</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="1" column="0">
-      <widget class="QRadioButton" name="radioButton_2">
+      <widget class="QRadioButton" name="radioButton_insertQuery">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>insert query</string>
        </property>
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="lineEdit_matchActionOfEntity"/>
+      <widget class="QLineEdit" name="lineEdit_matchActionOfEntity">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </widget>
      </item>
      <item row="0" column="0">
-      <widget class="QRadioButton" name="radioButton">
+      <widget class="QRadioButton" name="radioButton_selectEnt">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Action or attribute of</string>
        </property>
@@ -679,6 +811,11 @@
      </item>
      <item row="0" column="1">
       <widget class="QComboBox" name="comboBox_actionOf">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <item>
         <property name="text">
          <string>Select Entity</string>
@@ -688,6 +825,98 @@
      </item>
     </layout>
    </widget>
+  </widget>
+  <widget class="QListWidget" name="listWidget_rules">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>471</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>150</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Rule name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_ruleName">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>150</y>
+     <width>391</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NewRule</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>10</y>
+     <width>158</width>
+     <height>105</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_addRuleToDoc">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add Rule</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_clear">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

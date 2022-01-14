@@ -107,7 +107,41 @@
      </widget>
     </item>
     <item row="11" column="1">
-     <widget class="QComboBox" name="comboBox_action"/>
+     <widget class="QComboBox" name="comboBox_action">
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>shut-arrived-enemy-leader</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>shut-arrived-enemy-second</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>turn-pix-right</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>turn-pix-left</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>keep-same</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>random</string>
+       </property>
+      </item>
+     </widget>
     </item>
     <item row="5" column="1">
      <widget class="QLineEdit" name="lineEdit_locationY"/>

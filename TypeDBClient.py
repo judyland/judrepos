@@ -2,6 +2,7 @@ from typedb.client import TypeDB, SessionType, TransactionType
 keyspace = "haganash"
 
 def queryEntities():
+    #TODO: check if connected for not to crush
     with TypeDB.core_client("localhost:1729") as client:
         with client.session(keyspace,SessionType.DATA) as session:
             with session.transaction(TransactionType.READ) as transaction:
